@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Conversion Value {% endblock %}
+{% block content %} 
+
+<div class="container">
+    <h1>Currency Converter</h1>
+    <div class="result">
+        {{val}}
+    </div>
+    <form action="/reset">
+        <div class="buttonInput"><button>Home</button></div>
+    </form>
+</div>
+{% endblock %}

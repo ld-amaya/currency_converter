@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Currency Converter {% endblock %}
+{% block content %} 
+
+<div class="container">
+    <h1>Currency Converter</h1>
+    <div class="msg">
+        {% for category, msg in get_flashed_messages(with_categories=true) %}
+        <p class ={{category}}>{{ msg }}</p>
+        {% endfor %}
+    </div>
+    <form action="/checkInput" method='POST'>
+        <div class="dataInput"><label for="from">Convert From </label><input id='from' type="text" name ='cnyFrom' placeholder="type currency symbol" value ={{cnyFrom}}></div>
+        <div class="dataInput"><label for="to">Convert To </label><input id='to' type="text" name ='cnyTo' placeholder="type currency symbol" value = {{cnyTo}}></div>
+        <div class="dataInput"><label for="amount">Amount</label><input id='amount' type="text" name='amount' placeholder="enter amount" value = {{amount}}></div>
+        <div class="buttonInput"><button>Convert</button>
+    </form>
+</div>
+{% endblock %}

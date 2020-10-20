@@ -1,0 +1,49 @@
+input{
+    width: 100%;
+}
+
+button{
+    background-color: rgb(87, 87, 245);
+    color:white;
+    border:0;
+    padding:10px 15px 10px 15px;
+    width:40%;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container{
+    width:25%;
+    margin:0 auto;
+    border: 1px solid teal;
+    padding:20px;
+    margin-top:80px;
+    border-radius: 10px;
+}
+
+.dataInput{
+    display:block;
+    margin-top: 10px;
+}
+.buttonInput{
+    margin-top:20px;
+    text-align: center;
+}
+
+.error{
+    background-color: #d21e37;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.result{
+    text-align: center;
+    font-size: 1.3em;
+}
